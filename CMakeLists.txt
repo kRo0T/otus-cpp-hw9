@@ -15,7 +15,7 @@ target_link_libraries(async_cli async)
 
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
-install(TARGETS async async_cli RUNTIME DESTINATION bin)
+install(TARGETS async RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
