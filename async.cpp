@@ -83,7 +83,7 @@ public:
 };
 
 class FilePrinter : public IPrinter {
-    std::atomic_int id = 0;
+    std::atomic_int id{0};
 public:
     void print(const Bulk& bulk) {
         ofstream file;
