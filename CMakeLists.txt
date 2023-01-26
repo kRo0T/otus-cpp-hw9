@@ -7,7 +7,7 @@ project(async VERSION ${PROJECT_VESRION})
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_library(async STATIC async.cpp async.h)
+add_library(async SHARED async.cpp async.h)
 
 add_executable(async_cli main.cpp)
 
